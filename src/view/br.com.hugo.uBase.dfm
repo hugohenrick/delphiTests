@@ -1,0 +1,71 @@
+object FrmBase: TFrmBase
+  Left = 0
+  Top = 0
+  Caption = 'Base'
+  ClientHeight = 800
+  ClientWidth = 1024
+  Color = clBtnFace
+  Constraints.MinHeight = 800
+  Constraints.MinWidth = 1024
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnMaster: TPanel
+    Left = 0
+    Top = 0
+    Width = 1024
+    Height = 265
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 0
+  end
+  object pnDetail: TPanel
+    Left = 0
+    Top = 265
+    Width = 1024
+    Height = 535
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+    ExplicitTop = 271
+    object pnButtons: TPanel
+      Left = 0
+      Top = 472
+      Width = 1024
+      Height = 63
+      Align = alBottom
+      TabOrder = 0
+      object dbNavigator: TDBNavigator
+        Left = 1
+        Top = 1
+        Width = 1022
+        Height = 61
+        Align = alClient
+        TabOrder = 0
+        ExplicitLeft = 472
+        ExplicitTop = 32
+        ExplicitWidth = 240
+        ExplicitHeight = 25
+      end
+    end
+    object DBGrid1: TDBGrid
+      Left = 0
+      Top = 0
+      Width = 1024
+      Height = 472
+      Align = alClient
+      TabOrder = 1
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
+  end
+end
